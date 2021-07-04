@@ -3,17 +3,17 @@ using namespace std;
 
 int main()
 {
-    int a,b,c,d;
-    int output=0;
+    long a,b,c,d;
+    long output=0;
     cin>>a>>b>>c>>d;
     if(a==b){
-        output++;
+        ++output;
     }
-    if(a==b||a==c){
-        output++;
+    if(a==c||b==c){
+        ++output;
     }
-    if(a==b||a==c||a==d){
-        output++;
+    if(b==d||c==d||a==d){
+        ++output;
     }
     cout << output << endl;
     return 0;
